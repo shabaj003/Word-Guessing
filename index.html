@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Guessing Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="game-container">
+
+    <div id="chooseDifficulty" class="screen active">
+      <h1 class="title glow">Guess a Word</h1>
+      <h5>Choose a difficulty</h5>
+      <div class="btn-group">
+        <button onclick="chooseDif1()">Easy</button>
+        <button onclick="chooseDif2()">Normal</button>
+        <button onclick="chooseDif3()">Hard</button>
+      </div>
+    </div>
+
+    <div id="startButton" class="screen">
+      <h1 class="title glow">Guess a Word</h1>
+      <button onclick="start()">Start</button>
+      <p class="note">Note: Some words may contain a hyphen (-) like "X-ray"</p>
+    </div>
+
+    <div id="mainGame" class="screen">
+      <p id="question" class="animated-text"></p>
+      <input type="text" id="guess" maxlength="1" placeholder="Enter letter...">
+      <button onclick="enterGuess()">Enter Guess</button>
+    </div>
+
+    <div id="RRguess" class="status-box">
+      <p id="rightGuess"></p>
+      <p id="wrongGuess"></p>
+      <p id="guessesLeft"></p>
+    </div>
+
+    <div id="youLose" class="screen">
+      <h1 class="lose-text">😢 You Lose</h1>
+      <p id="correctWordWas"></p>
+      <button onclick="restart()">Play Again</button>
+    </div>
+
+    <div id="youWin" class="screen">
+      <h1 class="win-text">🎉 You Win!</h1>
+      <button onclick="restart()">Play Again</button>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
