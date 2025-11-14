@@ -23,10 +23,12 @@ body {
   box-shadow: 0 0 30px rgba(221, 238, 238, 0.3);
   animation: fadeIn 1s ease forwards;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 h1, h2, h5 {
   margin: 10px 0;
+  font-style: oblique;
 }
 
 .title {
@@ -37,8 +39,8 @@ h1, h2, h5 {
 }
 
 .glow {
-  color: #00e0ff;
-  text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+  color: #f2f2f2;
+  text-shadow: 0 0 10px #00e0ff, 0 0 20px #007bff;
 }
 
 .btn-group {
